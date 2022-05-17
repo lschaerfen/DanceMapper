@@ -31,7 +31,7 @@ def fillReadMatrices(str inputFile, int seqlen, int mincoverage, int undersample
     cdef int i
     
     # open the file
-    cfile = fopen(inputFile, "r")
+    cfile = fopen(inputFile.encode(), "r")
     if cfile == NULL:
         raise IOError(2, "No such file or directory: '{0}'".format(inputFile))
 
@@ -143,7 +143,7 @@ def compute1Dprofile(str inputFile, int seqlen, int mincoverage):
  
 
     # open the file
-    cfile = fopen(inputFile, "r")
+    cfile = fopen(inputFile.encode(), "r")
     if cfile == NULL:
         raise IOError(2, "No such file or directory: '{0}'".format(inputFile))
 

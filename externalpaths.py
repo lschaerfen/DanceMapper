@@ -2,10 +2,10 @@
 # insert absolute paths to dependencies below.
 # Only ringmapperpath needs to be defined for DanceMapper
 
-ringmapperpath = '' # example: '/Users/xxxxxx/Code/RingMapper'
-arcplotpath = '' # example: '/Users/xxxxxx/Code/arcPlot/'
-rnatoolspath = '' # example: '/Users/xxxxxxx/Code/RNATools/'
-rnastructurepath = '' # example: '/Users/xxxxxxxx/Code/RNAstructure/exe/'
+ringmapperpath = '/home/ls2286/project/build/RingMapper' # example: '/Users/xxxxxx/Code/RingMapper'
+arcplotpath = '/home/ls2286/project/build/arcPlot/' # example: '/Users/xxxxxx/Code/arcPlot/'
+rnatoolspath = '/home/ls2286/project/build/RNATools' # example: '/Users/xxxxxxx/Code/RNATools/'
+rnastructurepath = '/home/ls2286/project/build/RNAstructure/exe/' # example: '/Users/xxxxxxxx/Code/RNAstructure/exe/'
 
 
 

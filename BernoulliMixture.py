@@ -580,7 +580,7 @@ class BernoulliMixture(object):
                 
                 print('\tValid solution!')
                 msg = '\tP = ['
-                for i in xrange(self.pdim):
+                for i in range(self.pdim):
                     msg += ' {0:.3f} +/- {1:.3f},'.format(self.p[i], self.p_err[i])
                 print(msg[:-1]+' ]')
                 print('\tEM converged in {0} steps ({1:.0f} seconds); BIC={2:.1f}'.format(CM.step, time.time()-timestart, self.BIC))
@@ -778,7 +778,7 @@ class BernoulliMixture(object):
 
         OUT.write('\n\n# Nt Mu ; Mu_err\n')
         # write out Mu with active and inactive info
-        for i in xrange(self.mudim):
+        for i in range(self.mudim):
             
             if self.idxmap is not None:
                 OUT.write('{0} '.format(self.idxmap[i]))
@@ -814,7 +814,7 @@ class BernoulliMixture(object):
         
         # write out full initial mu without worrying about active/inactive
         OUT.write('\n\n# Initial Mu\n')
-        for i in xrange(self.mudim):
+        for i in range(self.mudim):
             if self.idxmap is not None:
                 OUT.write('{0} '.format(self.idxmap[i]))
             else:

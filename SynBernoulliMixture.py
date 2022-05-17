@@ -165,7 +165,7 @@ class SynBernoulliMixture():
         # by default, things are not mutated (=0)
         muts = np.zeros((num_reads, seqlen), dtype=np.int8)
 
-        for m in xrange(num_models):
+        for m in range(num_models):
             
             # create mask of items to select
             mask = np.zeros(muts.shape, dtype=bool)
